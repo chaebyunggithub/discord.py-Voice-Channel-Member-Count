@@ -1,0 +1,10 @@
+while True:
+            i = 0
+            voice_channel_list = guild.voice_channels
+            for members in voice_channel_list:
+                for members2 in members.members:
+                    i = i+1       
+            channel = bot.get_channel(voicechannelcountid) #Show Counting Channel 
+            await channel.edit(name='Count : ' + str(i))              
+            print ('Voice Channel Member Count : '+str(i))
+            await asyncio.sleep(60)  
